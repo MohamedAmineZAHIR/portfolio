@@ -35,3 +35,17 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+// jQuery for download pdf file
+$(function() {
+    $('#cv').click(function(e) {
+        e.preventDefault();  //stop the browser from following
+        window.location.href = '/portfolio/doc/cv.pdf';
+    });
+    
+     $('#cv_b').click(function(e) {
+        e.preventDefault();  //stop the browser from following
+        window.location.href = '/portfolio/doc/cv.pdf';
+     });
+});
